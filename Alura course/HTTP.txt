@@ -1,0 +1,1 @@
+RFC 2616 - especifica regras para o HTTP
