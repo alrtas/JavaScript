@@ -1,1 +1,13 @@
 RFC 2616 - especifica regras para o HTTP
+Client - server
+Já está na versão 2, porém a 1.1 ainda é a mais utilizada
+HTTPS = HTTP + SSL/TLS
+SSL/TLS 
+  - Possui certificado digital com chave publica no navegador
+  - Chave privada no servidor para descriptografar
+
+COMODO RSA
+  - Orgão certificador de certificados digitais
+
+HTTP é stateless
+ -  Não guarda estado, uma requisição não sabe o que foi feita em outras
