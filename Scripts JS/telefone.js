@@ -1,7 +1,7 @@
 //Função colocada no padrão do BLIP
 //Desenvolvedor: Thiago Alberto da Silva
 //Data de publicação:  08/05/2020
-//Versão: 1.0.0
+//Versão: 1.0.1
 
 
 
@@ -27,19 +27,25 @@ function run (rawPhone){
 // Final do script que faz formatação de qualquer formato de número no padrão DDDNNNNNNNNN (048) 9 96265-0373 -> 48996260373
 
 // Inicio do scrpt que valida se é válido ou não o número
-//Tem como retorno TRUE ou FALSE.
-          // Retorno TRUE é um celular ou número fixo com DDD válido.
-          // Retorno FLASE não é um número valido, nem celular nem fixo.
+//Tem como retorno json com campo status, TRUE ou FALSE e campo telefone, com o telefone já formatado.
+          // status = TRUE é um celular ou número fixo com DDD válido.
+          // status =  FLASE não é um número valido, nem celular nem fixo.
    var str = newtel;
    const regex = /^([1-9]{2})9[1-9]{1}[0-9]{3}[0-9]{4}$/igm;
    var patt = new RegExp(regex);
    //Valida caso de celular
    if(patt.test(str)){
-        return (true) 
+        return object = {
+            'status' : true,
+            'telefone' : newtel
+        }   
    }else{ //Valida caso de telefone fixo
         const regex = /^([1-9]{2})( |)[2-5]{1}[0-9]{3}(|-| )[0-9]{4}$/igm;
         var patt = new RegExp(regex);
-        return (patt.test(str)); 
+        return object = {
+            'status' : patt.test(str),
+            'telefone' : newtel
+        }
    }
 }
 
