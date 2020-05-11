@@ -8,6 +8,7 @@
 //Caso seja menor, adiciona zeros na frente
 //Parametro de incremento define o que vai ser na frente
 //Validação se é número ou texto na variavel string deve ser feita pelo proprio BLIP.
+//Variaveis numero e incremento devem ser criadas como variaveis globais no builder
 //Tem como retorno diretamente a string formatada
 function run(string, numero, incremento){ 
     var casas = numero;

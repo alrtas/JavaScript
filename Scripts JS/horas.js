@@ -33,11 +33,11 @@ function minuto(variavel){
 
 //Trocar a palavra "minuto" por "run"
 //Retorna objeto json com campo status, TRUE ou FALSE e campo telefone, com o telefone já formatado.
-          // status = TRUE é um minuto válida.
-          // status = FLASE é um minuto invalido.
+          // status = TRUE é um dia válido.
+          // status = FLASE é um dia invalido.
 function dia(variavel){
     var str = variavel;
-    const regex = /(0[1-9]|[12]\d|3[01])/img;
+    const regex = /^(0[1-9]|[12]\d|3[01])$/img;
     var patt = new RegExp(regex);
         return object = {
             'status' : patt.test(str),
@@ -47,11 +47,11 @@ function dia(variavel){
 
 //Trocar a palavra "minuto" por "run"
 //Retorna objeto json com campo status, TRUE ou FALSE e campo telefone, com o telefone já formatado.
-          // status = TRUE é um minuto válida.
-          // status = FLASE é um minuto invalido.
+          // status = TRUE é um mes válida.
+          // status = FLASE é um mes invalido.
 function mes(variavel){
     var str = variavel;
-    const regex = /(0[1-9]|1[0-2])/img;
+    const regex = /^(0[1-9]|1[0-2])$/img;
     var patt = new RegExp(regex);
     return object = {
         'status' : patt.test(str),
