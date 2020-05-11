@@ -31,6 +31,35 @@ function minuto(variavel){
     }  
 }
 
+//Trocar a palavra "minuto" por "run"
+//Retorna objeto json com campo status, TRUE ou FALSE e campo telefone, com o telefone já formatado.
+          // status = TRUE é um minuto válida.
+          // status = FLASE é um minuto invalido.
+function dia(variavel){
+    var str = variavel;
+    const regex = /(0[1-9]|[12]\d|3[01])/img;
+    var patt = new RegExp(regex);
+        return object = {
+            'status' : patt.test(str),
+            'dia' : str
+        }  
+    }
+
+//Trocar a palavra "minuto" por "run"
+//Retorna objeto json com campo status, TRUE ou FALSE e campo telefone, com o telefone já formatado.
+          // status = TRUE é um minuto válida.
+          // status = FLASE é um minuto invalido.
+function mes(variavel){
+    var str = variavel;
+    const regex = /(0[1-9]|1[0-2])/img;
+    var patt = new RegExp(regex);
+    return object = {
+        'status' : patt.test(str),
+        'mes' : str
+    }  
+}
+
+
 //Trocar a palavra "hora_minuto_separado" por "run"
 //Retorna objeto json com campo status, TRUE ou FALSE e campo telefone, com o telefone já formatado.
 //Minimo de 1 número por variavel
