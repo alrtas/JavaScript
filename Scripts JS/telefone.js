@@ -27,7 +27,7 @@ function run (rawPhone){
 // Final do script que faz formatação de qualquer formato de número no padrão DDDNNNNNNNNN (048) 9 96265-0373 -> 48996260373
 
 // Inicio do scrpt que valida se é válido ou não o número
-//Tem como retorno json com campo status, TRUE ou FALSE e campo telefone, com o telefone já formatado.
+//Retorna objeto json com campo status, TRUE ou FALSE e campo telefone, com o telefone já formatado.
           // status = TRUE é um celular ou número fixo com DDD válido.
           // status =  FLASE não é um número valido, nem celular nem fixo.
    var str = newtel;
@@ -52,6 +52,3 @@ function run (rawPhone){
 //Somente tirar o comentario dessas linhas se quiser testar a função no https://playcode.io ou outro editor online
     //var phone = '(048)99626- 0373';
     //console.log(run(phone))
-
-
-
