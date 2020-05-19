@@ -17,7 +17,7 @@
                         'f':'*'
                     }
                 }
-                else if (o=="Telegram"){
+                else if (o=='Telegram'){
                     return ''
                 }
                 else if (o=='Messenger'){
